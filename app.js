@@ -34,7 +34,7 @@ app.use(
 
 mongoose
   .connect(
-    `mongodb+srv://invoiceSystem:9s1asbk9weCocMyg@pm.1tahh.mongodb.net/Graphqlfinal?retryWrites=true&w=majority`
+    `mongodb+srv://admin:PZzJ6OdRrgEkY8dS@cluster0.rmar3.mongodb.net/?retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(8000);
