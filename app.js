@@ -31,12 +31,8 @@ app.use(
     graphiql: true
   })
 );
-
-mongoose
-  .connect(
-    `mongodb+srv://admin:PZzJ6OdRrgEkY8dS@cluster0.rmar3.mongodb.net/events-react-dev?retryWrites=true&w=majority`
-  )
-  .then(() => {
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.rmar3.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`)
+.then(() => {
     app.listen(8001);
   })
   .catch(err => {
