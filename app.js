@@ -34,10 +34,10 @@ app.use(
 
 mongoose
   .connect(
-    `mongodb+srv://admin:PZzJ6OdRrgEkY8dS@cluster0.rmar3.mongodb.net/?retryWrites=true&w=majority`
+    `mongodb+srv://admin:PZzJ6OdRrgEkY8dS@cluster0.rmar3.mongodb.net/events-react-dev?retryWrites=true&w=majority`
   )
   .then(() => {
-    app.listen(8000);
+    app.listen(8001);
   })
   .catch(err => {
     console.log(err);
